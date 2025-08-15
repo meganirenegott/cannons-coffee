@@ -29,6 +29,52 @@
             </nav>
         </header>
         <main class="container">
+            <form id="form">
+                <h2>Contact Page</h2>
+
+                <!-- Name -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!--  phone number  -->
+                <label for="phone">Phone Number:</label>
+                <br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                <br>
+                <!-- Comments -->
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br><br>
+
+                <!-- Favorite Coffee Drop Down -->
+                <label for="faveCoffee">Favorite Coffee Flavor:</label><br>
+                <select id="faveCoffee" name="faveCoffee">
+                    <option value="vanilla">Vanilla</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="carmel">Carmel</option>
+                </select><br><br>
+
+                <!-- Radio Buttons Coffee or Employment -->
+                <fieldset>
+                    <legend>Are you Interested in Coffee or Employment?</legend>
+                    <label><input type="radio" name="coffeeOrJob" value="Coffee" checked="checked"> Coffee</label>
+                    <br>
+                    <label><input type="radio" name="coffeeOrJob" value="Employment"> Employment</label>
+                    <br>
+                </fieldset><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+            <br>
+            <div id="#thankYouMessage"></div>
+
+
+
         </main>
         <footer>
             <img src="images/logo-footer.png" alt="Cannons Coffee, Beans of Joy! Est. 2014">
